@@ -1,0 +1,72 @@
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    color: #ff5500;
+    padding: 20px;
+  }
+  .content span{
+    font-size: 6vh;
+    font-weight: 700;
+    text-shadow: 5px 0px 10px white;
+  }
+  .content p{
+    color: blue;
+    font-size: 5vh;
+    font-weight: 700;
+    text-shadow: 5px 0px 10px white;
+  }
+  .content #p1{
+    color: rgb(5, 155, 5);
+    font-size: 5vh;
+    font-weight: 700;
+    text-shadow: 5px 0px 10px white;
+  }
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 150px;
+    font-size: 19px;
+    padding: 8px 10px;
+    border : 2px solid white;
+    border-top: 2px solid #ff5500;
+    border-bottom: 2px solid green;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #ff5500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s ease;
+  }
+  
+  #myBtn:hover {
+    border : 2px solid white;
+    border-left: 2px solid #ff5500;
+    border-right: 2px solid green;
+    background-color: rgba(25, 10, 230, 0.4);
+    color: white;
+    transition: 1s;
+  }
+  #img{
+      
+  }
+  img{
+      border : 5px solid white;
+      border-radius: 50%;
+      border-top : 5px solid #ff5500;
+      border-bottom: 5px solid rgb(19, 170, 19);
+      transition: 700ms ease;
+  }
+  img:hover{
+      border-radius: 50%;;
+      border: 5px solid white;
+      border-top : 5px solid #ff5500;
+      border-bottom: 5px solid green;
+      transition: 700ms ease;
+  }
+  

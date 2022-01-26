@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Republic Day | 26 January</title>
+    <link rel="icon" href="logo.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="row col-sm col-md">
+      <!-- The video -->
+      <video autoplay muted loop id="myVideo">
+        <source src="vdo.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <!-- Optional: some overlay text to describe the video -->
+    <div class="content col-sm text-center">
+      <marquee behavior="alternate" direction="left"
+        ><span>26 January</span></marquee
+      >
+      <br />
+      <marquee behavior="alternate" direction="right"
+        ><p>Happy Republic Day</p></marquee
+      >
+      <marquee behavior="alternate" direction="up"
+        ><p id="p1">73<sup>th</sup> Republic Day</p></marquee
+      >
+      <!-- Use a button to pause/play the video with JavaScript -->
+      <div class="col-sm-4 m-auto"id="img"><img src="am.jpeg" alt="img" width="95%"></div>
+      <br><br>
+      <p>Er. Amit Surial</p>
+      <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
+    <script>
+      // Get the video
+      var video = document.getElementById("myVideo");
+
+      // Get the button
+      var btn = document.getElementById("myBtn");
+
+      // Pause and play the video, and change the button text
+      function myFunction() {
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = "Pause";
+        } else {
+          video.pause();
+          btn.innerHTML = "Play";
+        }
+      }
+    </script>
+  </body>
+</html>
